@@ -1,0 +1,6 @@
+use('db_school')
+db.students.insertMany([
+    {'nome': 'João', 'matricula': '2021001'},
+    {'nome': 'Maria', 'matricula': '2021002'},
+    {'nome': 'Pedro', 'matricula': '2021003'}
+])
