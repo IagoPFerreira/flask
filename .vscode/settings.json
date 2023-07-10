@@ -1,4 +1,16 @@
 {
   "python.linting.flake8Enabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./unittest-flask",
+    "-p",
+    "test_*.py"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": [
+    "unittest-flask"
+  ]
 }
