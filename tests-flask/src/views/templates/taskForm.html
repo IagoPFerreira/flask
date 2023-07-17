@@ -1,0 +1,29 @@
+{% extends "basic.html" %}
+{% block content %}
+    <form method="post" class="new-task">
+        <label for="name">Task
+            <input type="text" name="name" id="name" required>
+        </label>
+        <label for="status">Status
+            <select name="status" id="status">
+                <option value="Não iniciado">Não iniciado</option>
+                <option value="Em progresso">Em progresso</option>
+                <option value="Concluído">Concluído</option>
+                <option value="Atrasado">Atrasado</option>
+            </select>
+        </label>
+        <label for="porcentagem">Porcentagem de conclusão
+            <input type="number" name="porcentagem" id="porcentagem" required>
+        </label>
+        <label for="descripton">Descrição da task
+            <textarea type="text" name="descripton" id="descripton" required></textarea>
+        </label>
+        <label for="deadline">Deadline limite
+            <input type="date" name="deadline" id="deadline" required>
+        </label>
+        <label for="responsible">Responsável
+            <input type="text" name="responsible" id="responsible" required>
+        </label>
+        <button type="submit" class="submit">Enviar</button>
+    </form>
+{% endblock %}

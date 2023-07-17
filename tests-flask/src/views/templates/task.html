@@ -1,0 +1,15 @@
+{% extends "basic.html" %}
+{% block content %}
+    <section class="task">
+        <h1>{{ task.name }}</h1>
+        <h2>{{ task.task }}</h2>
+        <p>Descrição: {{ task.description_task }}</p>
+        <p>Status: {{ task.status }}</p>
+        <p>Porcentagem de conclusão: {{ task.completion_percentage }}</p>
+        <p>Deadline Limite: {{ task.deadline }}</p>
+        <p>Pessoa responsável: {{ task.responsible }}</p>
+        <form action="/task/{{ task._id }}/delete" method="post" class="delete">
+            <button>Apagar</button>
+        </form>
+    </section>
+{% endblock content %}
